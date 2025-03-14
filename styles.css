@@ -1,0 +1,95 @@
+:root{
+    --ff-style: "IBM Plex Mono", "Segoi UI", "sans-serif";
+    
+    
+    --fs-normal: 1rem;
+    --fs-bigger: 1.5rem;
+
+    --fw-normal: 400
+    --fw-bolder: 700;
+
+    --clr-white: #fff;
+    --clr-charcoal: #131313;
+    --clr-black: black;
+    --clr-eastland-light-blue: #0095ca;
+    --clr-eastland-dark-blue: #062951;
+    --clr-eastland-green:  #80bf3f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+    
+    .navbar{
+        background: var(--clr-charcoal);
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        top: 0;
+        position: sticky;
+        z-index: 999;
+    }
+        .navbar_wrapper{
+            display: flex;
+            justify-content: space-between;
+            height: 6rem;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 3rem;
+            z-index: 1;
+        }
+        .navbar_menu_container{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        }
+        
+        .navbar_link{
+        height: 2rem;
+        }
+        .navbar_link_item{
+            color: var(--clr-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 8rem;
+            text-decoration: none;
+        }
+        .navbar_button{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0 1rem;
+        }
+        .navbar_link_button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            padding: 10px 20px;
+            color: var(--clr-white);
+            background: linear-gradient(to right, var(--clr-eastland-dark-blue), var(--clr-eastland-green), var(--clr-eastland-light-blue));
+            border-radius: 8px;
+        }
+        #navbar_logo{
+            background: linear-gradient(to bottom, var(--clr-eastland-dark-blue), var(--clr-eastland-light-blue));
+            background-size: 100%;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 2rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .navbar_link :hover{
+            color: var(--clr-eastland-light-blue);
+            transition: all .3s each;
+        }
+        
